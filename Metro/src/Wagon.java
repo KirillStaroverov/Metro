@@ -1,12 +1,13 @@
 
 public class Wagon {
 	private int wagonId; 
-	private int trainId; 
-	private String wagonType;
+	private boolean isHeadWagon;
 	
-	public Wagon(Depo depo) {
+	private int trainId; 
+	
+	public Wagon(DepoWagonBuilder depo) {
 		this.wagonId = depo.getWagonId();
-		this.wagonType = depo.getWagonType();
+		this.isHeadWagon = depo.getIsHeadWagon();
 	}
 	
 	

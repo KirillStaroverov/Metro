@@ -5,6 +5,7 @@ public class Train {
 	private int driverId;
 	private int lineId;
 	Driver driver;	
+	
 	ArrayList<Wagon> wagon = new ArrayList<>(5);
 	
 	

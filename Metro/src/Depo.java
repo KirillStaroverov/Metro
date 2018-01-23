@@ -1,23 +1,11 @@
+import java.util.ArrayList;
 
 public class Depo {
-	private int wagonId; 
-	private String wagonType = "average";
 	
-	public Depo(int wagonId, String wagonType) {
-		this.wagonId = wagonId;
-		this.wagonType = wagonType;
-	}
+	ArrayList<Wagon> allWagons = new ArrayList<Wagon>();
+	ArrayList<Train> allTrains = new ArrayList<>();
 	
-	public Wagon build() {
-		return new Wagon(this);
+	public Wagon getNextWagon(int i) {
+		return allWagons.get(i);
 	}
-
-	public int getWagonId() {
-		return wagonId;
-	}
-
-	public String getWagonType() {
-		return wagonType;
-	}
-	
 }
